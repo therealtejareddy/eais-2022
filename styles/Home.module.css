@@ -1,116 +1,111 @@
-.container {
-  padding: 0 2rem;
+.heroSection {
+  background-image:linear-gradient(to bottom,rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.6), rgba(78, 77, 77, 0.3)), url('/images/hero_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem;
+  color: white;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.heroSection h1{
   text-align: center;
+  font-size: 4.5rem;
+}
+.heroSection h3 {
+  text-align: center;
+  font-size: 2rem;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.welcomeSection {
+  padding: 2rem 16rem 5rem 16rem;
+  position: relative;
+  overflow: hidden;
+}
+.welcomeSection::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 49%;
+  width: 100%;
+  height: 6rem;
+  transform: rotate(-4deg);
+  transform-origin: center;
+  background-color: #ceb025;
+  overflow: hidden;
+  z-index: -1;
+}
+.welcomeSection::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 49%;
+  width: 100%;
+  height: 6rem;
+  transform: rotate(4deg);
+  transform-origin: center;
+  background-color: #ceb025;
+  overflow: hidden;
+  z-index: -1;
+}
+.welcomeSection h1 {
+  text-align: center;
+
+}
+.span {
+  position: relative;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.span:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: #006316;
 }
 
-.grid {
+.welcomeSection p {
+  line-height: 1.8;
+}
+
+.imageSection{
+  margin-top: 3rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  justify-content: space-around;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+@media screen and (max-width: 992px){
+  .heroSection h1{
+    font-size: 3.5rem;
+  }
+  .heroSection h3 {
+    font-size: 1.5rem;
+  }
+
+  .welcomeSection{
+    padding: 2rem 8rem 5rem 8rem;
+  }
+  
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+@media screen and (max-width: 768px) {
+  .welcomeSection {
+    padding: 2rem 4px;
+  }
+  .welcomeSection h1 {
+    font-size: 3rem;
+  }
+  .imageSection {
     flex-direction: column;
+  }
+  .heroSection h1{
+    font-size: 2.5rem;
+  }
+  .heroSection {
+    padding: 2rem 0;
+  }
+  .heroSection h3 {
+    font-size: 1rem;
   }
 }
