@@ -8,12 +8,12 @@ function special_session() {
             <h1 id="uk">Special Session</h1>
            
             <div id="rd">
-            <p >Adaptive Learning Systems for Image Processing (<a href="#">more info</a>)</p>
+            <p className="i" >Adaptive Learning Systems for Image Processing</p>
             <h2>SPECIAL SESSION LEAD ORGANIZER:</h2>
-            <p>Amutha S, Artificial Intelligence & Data Science, Saveetha Engineering College, India</p> <p><span>amuthabenziker@gmail.com</span></p>
+            <p>Amutha S, Artificial Intelligence & Data Science, Saveetha Engineering College, India</p> <p><a href="mailto:amuthabenziker@gmail.com"><span>amuthabenziker@gmail.com</span></a></p>
             <h2>CO-ORGANIZERS:</h2>
-            <p>Joyal Isac S, Saveetha Engineering College, India,<span> joyalisac@saveetha.ac.in</span></p>
-            <p>Niha K, Saveetha Engineering College, India, <span>niha.k.cse@gmail.com</span></p>
+            <p>Joyal Isac S, Saveetha Engineering College, India,<a href="mailto:joyalisac@saveetha.ac.in"><span> joyalisac@saveetha.ac.in</span></a></p>
+            <p>Niha K, Saveetha Engineering College, India,<a href="mailto:niha.k.cse@gmail.com"> <span>niha.k.cse@gmail.com</span></a></p>
             <h2>AIM AND SCOPE OF SESSION:</h2>
             <p className="justify">Aim of this special session is to bring together researchers from different fields of expertise to discuss how deep learning could help analysis, modelling, simulation, and application in the Interdisciplinary domains of several innovative technologies.</p>
             <p className="justify">In the last few years, the technologies related to imaging, video processing, computer graphics, 3D modelling and multimedia have been greatly employed in various application areas such as detection, image analysis, image compression, face recognition etc. The continuous development of these technologies leads researchers to propose new methodologies and applications in this field. Moreover, recent image-processing and machine learning algorithms give the opportunity to process large datasets as well as images, in order to extract information and develop new analysis procedures.</p>
@@ -42,6 +42,9 @@ function special_session() {
             span:hover{
                 color:black;
                 cursor:pointer;
+            }
+            .i{
+                font-size:50px;
             }
             .justify{
                 display: block;
