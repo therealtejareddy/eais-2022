@@ -23,7 +23,7 @@ function NavBar() {
                 <div ref={navRef} className={navStyle.linksrd}>
                 <ul>
                     <li><Link href="/"><a>Home</a></Link></li>
-                    <li><Link href="/special_session"><a>Special Session</a></Link></li>
+                    <li><Link href="/special_session"><a>Session Organizers</a></Link></li>
                     <li><Link href="/topics"><a>Topics</a></Link></li>
                     <li><Link href="/dates"><a>Dates</a></Link></li>
                     <li><Link href="/submission"><a>Submission</a></Link></li>

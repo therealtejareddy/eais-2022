@@ -29,7 +29,7 @@ function Footer() {
                 <div>
                 <Image src="/images/org_3.png" alt="" width="190" height="90" className={styles.image}/>
                 </div>
-                <a href="https://secure.ethicspoint.com/domain/media/en/gui/20410/index.html">IEEE Ethics Reporting</a>
+              
             </div>
         </div>
     )

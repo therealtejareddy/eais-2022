@@ -61,7 +61,7 @@
   left: 0;
   width: 100%;
   height: 2.5px;
-  background-color: #006316;
+  background-color: white;
 }
 
 .welcomeSection p {
@@ -108,4 +108,8 @@
   .heroSection h3 {
     font-size: 1rem;
   }
+}
+.span{
+  font-size: 60px;
+  letter-spacing: 1px;
 }
